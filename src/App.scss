@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.course {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+    }
+}
