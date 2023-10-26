@@ -2,6 +2,7 @@ import { Facebook, Instagram, Telegram, YouTube } from '../public';
 import './App.scss'
 import Test from './Test';
 import { Navbar } from './components';
+import Hero from './components/Hero/Hero';
 import Sidebar from './components/Sidebar/Sidebar';
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <Sidebar />
     <section id='Home'>
       <Navbar />
+      <Hero />
     </section>
     <section id='Services'>Parallax</section>
     <section>Services</section>

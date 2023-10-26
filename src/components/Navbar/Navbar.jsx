@@ -8,7 +8,7 @@ const Navbar = () => {
         {
             id: 1,
             title: "Instagram",
-            url: 'https://www.instagram.com/xusanboyev_017',
+            url: 'https://www.instagram.com/asadullohe_',
             icon: <Instagram />,
             color: "#e64771"
         },
@@ -34,15 +34,21 @@ const Navbar = () => {
             color: "#29b6f6"
         },
     ]
+
+    const variants = {
+        visible: (i) => ({ opacity: 1, y: 0, transition: { delay: i * 0.06 } }),
+        hidden: { opacity: 0, y: -200 },
+    };
+
     return (
         <div className={styles.navbar}>
             <div className={styles.wrapper}>
                 <motion.h2 initial={{ opacity: 0, x: -150 }} animate={{ opacity: 1, x: 0 }} transition={{ type: 'spring', duration: 1.5 }}>Amin Dev</motion.h2>
-                <div className={styles.social}>
-                    {!!socials && socials.map((social) => (
-                        <Tooltips {...social} />
+                <motion.div className={styles.social} initial="hidden" animate={open ? 'visible' : 'hidden'} variants={variants}>
+                    {!!socials && socials.map((social, i) => (
+                        <Tooltips {...social} variants={variants} custom={i} />
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
     )
