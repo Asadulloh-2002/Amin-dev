@@ -64,19 +64,17 @@
     color: #ffffff09;
     font-weight: bold;
     font-size: 50vh;
+    user-select: none;
 }
 .imageContainer {
-    width: 100%;
-    max-width: 600px;
-    height: 80vh;
     position: absolute;
     overflow: hidden;
-    top: 92px;
-    right: 300px;
+    top: 150px;
+    right: 270px;
     img {
         width: 100%;
-        max-width: 600px;
-        height: 85vh;
+        max-width: 450px;
+        height: 450px;
         object-fit: cover;
     }
 }

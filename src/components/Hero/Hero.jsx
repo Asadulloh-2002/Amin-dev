@@ -63,7 +63,7 @@ const Hero = () => {
         className={styles.wrapper}
       >
         <motion.div variants={textVariants} className={styles.textContainer}>
-          <motion.h2 variants={textVariants}>Harvey Tyler</motion.h2>
+          <motion.h2 variants={textVariants}>Khusanboyev Asadulloh</motion.h2>
           <motion.h1 variants={textVariants}>
             Wep developer and Geologist
           </motion.h1>
