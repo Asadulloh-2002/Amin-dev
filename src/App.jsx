@@ -1,7 +1,8 @@
 import { Facebook, Instagram, Telegram, YouTube } from "../public";
 import "./App.scss";
 import Test from "./Test";
-import { Hero, Navbar, Parallax, Services, Sidebar } from "./components";
+import { Contact, Hero, Navbar, Parallax, Services, Sidebar } from "./components";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
@@ -20,10 +21,8 @@ const App = () => {
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
-      <section>Portfolio1</section>
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
-      <section id="Contact">Contact</section>
+      <Portfolio />
+      <section id="Contact"><Contact /></section>
       {/* <Test /> */}
     </div>
   );

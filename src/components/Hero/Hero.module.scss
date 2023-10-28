@@ -1,10 +1,10 @@
-.hero {
+    .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
-    background: linear-gradient( 180deg, #0c0c1d, #111132 );
+    background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative;
-}
-.wrapper {
+    }
+    .wrapper {
     width: 1366px;
     height: 100%;
     margin: auto;
@@ -15,17 +15,17 @@
         flex-direction: column;
         justify-content: center;
         gap: 40px;
-        
+
         img {
-            width: 50px;
+        width: 50px;
         }
 
         h2 {
-            font-size: 30px;
-            color: #940B92;
+        font-size: 30px;
+        color: #940b92;
         }
         h1 {
-            font-size: 88px;
+        font-size: 88px;
         }
     }
     .buttons {
@@ -33,30 +33,30 @@
         align-items: center;
         gap: 20px;
         button {
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            border: 1px solid white;
-            background-color: transparent;
-            cursor: pointer;
-            font-weight: 300;
-            transition: all 0.2s ease;
-            &:last-child {
-                background-color: #fff;
-                color: #000;
-                &:hover {
-                    background-color: transparent;
-                    color: white;
-                }
-            }
+        z-index: 88;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+        font-weight: 300;
+        transition: all 0.2s ease;
+        &:last-child {
+            background-color: #fff;
+            color: #000;
             &:hover {
-                background-color: #fff;
-                color: #000;
+            background-color: transparent;
+            color: white;
             }
         }
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        }
     }
-}
-.slidingTextContainer {
+    }
+    .slidingTextContainer {
     width: 50%;
     position: absolute;
     bottom: -80px;
@@ -65,8 +65,8 @@
     font-weight: bold;
     font-size: 50vh;
     user-select: none;
-}
-.imageContainer {
+    }
+    .imageContainer {
     position: absolute;
     overflow: hidden;
     top: 150px;
@@ -77,4 +77,4 @@
         height: 450px;
         object-fit: cover;
     }
-}
+    }

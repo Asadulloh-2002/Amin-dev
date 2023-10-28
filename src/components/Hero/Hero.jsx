@@ -68,10 +68,10 @@ const Hero = () => {
             Wep developer and Geologist
           </motion.h1>
           <motion.div variants={textVariants} className={styles.buttons}>
-            <motion.button variants={textVariants}>
+            <button variants={textVariants}>
               See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            </button>
+            <button style={{cursor: 'pointer'}} variants={textVariants}>Contact Me</button>
           </motion.div>
           <motion.img
             variants={textVariants}
